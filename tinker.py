@@ -1,6 +1,7 @@
-from flask import Flask, render_template
+from flask import Flask, render_template, request
 from flask_socketio import SocketIO, send, emit
 import socket
+import requests
 
 port=5001
 
@@ -43,6 +44,18 @@ def handle_pause(val):
 @app.route('/')
 def index():
     return render_template('index.html')
+
+@app.route('/split')
+def index_split():
+
+    req = request.args
+    left = req.get("left")
+    right = req.get("right")
+
+    print(left)
+
+    return render_template('index_split.html')
+
 
 if __name__ == '__main__':
 

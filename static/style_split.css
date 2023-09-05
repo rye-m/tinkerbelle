@@ -1,0 +1,79 @@
+body {
+    background: #000;
+    font-family: "Nico Moji", sans-serif;
+  }
+  
+  .column {
+    height: 100vh;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+  }
+    .info {
+      margin-bottom: 10%;
+    }
+    h2 {
+      font-size: 3rem;
+    }
+    p {
+      font-size: 1.5rem;
+    }
+    a {
+      font-size: 2rem;
+      background: #0bd;
+      border-radius: 5px;
+      padding: 10px 20px;
+      color: #fff;
+      text-decoration: none;
+      display: inline-block;
+      margin-top: 18px;
+    }
+    a:hover {
+      background: #0090aa;
+    }
+  .left {
+    background-color: rgb(109, 202, 156);
+    background-size: cover;
+    color: rgba(255,255,255,.7);
+  }
+  .right {
+    background-color: rgb(201, 76, 76);
+    background-size: cover;
+    color: rgba(0,0,0,.7);
+  }
+  
+  @media all and (min-width: 500px) {
+    .wrapper {
+      display: flex;
+    }
+  }
+  
+  body{
+	/*background-color: white;*/
+}
+
+#user {
+	opacity: 0.6;
+	transition: opacity 1s;
+}
+
+#user.fadeOut{
+	opacity:0.1;
+}
+#user.fadeIn{
+	opacity: 0.6;
+}
+button.pcr-button {
+	display: none;
+}
+
+#controlPanel {
+	opacity: 0.0;
+	transition: opacity 1s;
+}
+
+#controlPanel.fadeIn{
+	opacity: 0.6;
+}
